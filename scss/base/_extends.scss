@@ -1,3 +1,4 @@
+
 %btn-course{
     background-color: #fade4f;
     border: none;
@@ -32,3 +33,24 @@
     display: flex;
     flex-direction: column;
 }
+
+%title-primary{
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+    color: #212529 !important;
+    font-weight: bold;
+}
+
+%title-secondary{
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    color: #212529;
+}
+
+%paragraph{
+    font-family: 'Roboto Slab';
+    font-size: 1.2rem;
+    text-align: justify;
+    margin:30px
+}
+
