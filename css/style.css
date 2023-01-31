@@ -2,8 +2,6 @@
 .btn-index-course, #index-courses .btn-index-course {
   background-color: #fade4f;
   border: none;
-  text-transform: uppercase;
-  color: black;
   padding: 5px 13px;
   text-align: center;
   text-decoration: none;
@@ -18,7 +16,7 @@
 
 .btn-index-course:hover, #index-courses .btn-index-course:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  color: #fade4f;
+  color: #fade4f !important;
   font-weight: bold;
   background-color: #212529;
 }
@@ -29,20 +27,27 @@
   justify-content: center;
 }
 
-#articles h1, #presentation_text h1, #index-courses .index-title h1 {
+h1, #course h1, #articles h1, #presentation_text h1, #index-courses .index-title h1 {
   font-family: "Roboto";
   font-size: 3.5rem;
   color: #212529 !important;
   font-weight: bold;
 }
 
-.card-body h2, #presentation_text h2, #index-courses .index-title h2 {
+#course h2, .card-body h2, #presentation_text h2, #index-courses .index-title h2 {
   font-family: "Roboto";
   font-size: 2.5rem;
   color: #212529;
 }
 
-.card-body p, #presentation_text p {
+#course h3 {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #212529;
+  font-weight: bold;
+}
+
+p, #course p, .card-body p, #presentation_text p {
   font-family: "Roboto Slab";
   font-size: 1.2rem;
   text-align: justify;
@@ -104,8 +109,7 @@ header {
   row-gap: 20px;
   column-gap: 20px;
   width: 100%;
-  margin-top: 30px;
-  padding: 20px;
+  margin: 30px 0px 30px 0px;
 }
 @media only screen and (max-width: 1024px) {
   #index-courses {
@@ -120,6 +124,9 @@ header {
   grid-area: title;
   text-align: left;
   margin-left: 10px;
+}
+#index-courses .index-title h2 {
+  margin-top: 50px;
 }
 @media only screen and (max-width: 1024px) {
   #index-courses .index-title h1 {
@@ -370,28 +377,167 @@ main .container {
   }
 }
 
-.my-course {
-  margin-top: 200px;
+#course {
+  margin-top: 40px;
 }
-
-#course .container .container-text {
-  padding-top: 100px;
-  background-color: red !important;
+#course h1 {
+  text-align: center;
+}
+#course h3 {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #fade4f;
+}
+#course p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+@media only screen and (max-width: 1024px) {
+  #course h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #212529;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #course h2 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+  #course h3 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #fade4f;
+  }
+  #course p {
+    font-size: 1rem;
+    margin: 10px;
+    text-align: justify;
+  }
 }
 #course .container img {
   width: 100%;
   padding: 0px;
 }
-
-.my-bg-course {
-  background-color: #fade4f !important;
+#course .container #course-img-profe {
+  width: 50%;
 }
+#course #course-list-cost {
+  list-style: none;
+  font-family: "Roboto Slab";
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+#course #course-list-cost li:nth-child(1) {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  padding: 5px;
+}
+#course #course-list-cost li:nth-child(2) {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: left;
+  margin-left: 20px;
+}
+#course #course-list-cost li:nth-child(3) {
+  width: 40%;
+  align-self: center;
+}
+#course #course-list-cost li:nth-child(4) {
+  font-size: 1.5rem;
+  padding: 15px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1024px) {
+  #course #course-list-cost {
+    list-style: none;
+    font-family: "Roboto Slab";
+    display: flex;
+    flex-direction: column;
+  }
+  #course #course-list-cost li:nth-child(1) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    background-color: #e2e2e2;
+    width: 100%;
+  }
+  #course #course-list-cost li:nth-child(2) {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: center;
+  }
+  #course #course-list-cost li:nth-child(3) {
+    width: 40%;
+    align-self: center;
+  }
+  #course #course-list-cost li:nth-child(4) {
+    font-size: 1rem;
+  }
+}
+#course #course-list-req {
+  text-align: left;
+  font-family: "Roboto Slab";
+  margin-top: 20px;
+}
+
 .my-bg-course h1 {
   text-align: left;
   padding: 10px;
 }
 .my-bg-course h4 {
   text-align: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: justify;
+  padding: 20px 40px 0px 40px;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #212529;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
+ul {
+  padding: 0px 20px 0px 50px;
+  text-align: justify;
+}
+ul li {
+  font-size: "Roboto", serif;
+}
+@media only screen and (max-width: 1024px) {
+  ul {
+    padding: 0px;
+    text-decoration: none;
+    padding-left: 25px;
+  }
+  ul li {
+    font-size: 1rem;
+  }
+}
+
+.text-center p {
+  text-align: center;
 }
 
 footer {
