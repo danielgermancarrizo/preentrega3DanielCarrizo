@@ -16,6 +16,7 @@
         border: 1px solid black;
         text-align: center;
         background-color: $primary-color;
+        padding: 0px;
     }
 
     p{
@@ -78,6 +79,8 @@
             font-weight: bolder;
             font-size: 1.8rem;
             padding: 5px;
+            background-color: $background_color;
+            text-align: center;
         }
 
         li:nth-child(2) {

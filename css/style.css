@@ -87,8 +87,24 @@ header {
 #carousel {
   padding-top: 75px;
 }
+#carousel .carousel-caption-text h4 {
+  color: black;
+  font-weight: bold;
+  background-color: #fade4f;
+  font-size: 3rem;
+  width: 100%;
+}
+#carousel .carousel-caption-text p {
+  color: black;
+  font-size: 2rem;
+  background-color: #212529;
+  color: #fade4f;
+  width: 100%;
+  margin: 0px;
+  padding: 15px;
+}
 @media only screen and (max-width: 1024px) {
-  #carousel h4 {
+  #carousel .carousel-caption-text h4 {
     font-size: 1.5rem;
     color: #212529;
     background-color: #fade4f;
@@ -96,7 +112,7 @@ header {
     padding-top: 3px;
     border-radius: 10px;
   }
-  #carousel p {
+  #carousel .carousel-caption-text p {
     display: none;
   }
 }
@@ -156,7 +172,7 @@ header {
 }
 #index-courses .course-2 {
   grid-area: course2;
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -169,7 +185,7 @@ header {
 }
 #index-courses .course-3 {
   grid-area: course3;
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -182,7 +198,7 @@ header {
 }
 #index-courses .course-4 {
   grid-area: course4;
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -387,6 +403,7 @@ main .container {
   border: 1px solid black;
   text-align: center;
   background-color: #fade4f;
+  padding: 0px;
 }
 #course p {
   font-size: 1.5rem;
@@ -435,6 +452,8 @@ main .container {
   font-weight: bolder;
   font-size: 1.8rem;
   padding: 5px;
+  background-color: #e2e2e2;
+  text-align: center;
 }
 #course #course-list-cost li:nth-child(2) {
   font-weight: bolder;
