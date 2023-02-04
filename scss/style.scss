@@ -2,6 +2,7 @@
 @import './base/maps';
 @import './base/extends';
 @import './base/variables';
+@import './base/mixins';
 
 // components
 *{
@@ -23,6 +24,6 @@ a{
 @import './sections/articles';
 @import './sections/courses';
 @import './sections/article.scss';
-@import './components/header';
+@import './sections/contact';
 @import './components/footer';
 

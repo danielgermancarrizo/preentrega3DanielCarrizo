@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
-.btn-index-course, #index-courses .btn-index-course {
+#contact .my-contact .my-form .btn-send, .btn-index-course, #index-courses .btn-index-course {
   background-color: #fade4f;
   border: none;
   padding: 5px 13px;
@@ -14,14 +14,14 @@
   border-radius: 6px;
 }
 
-.btn-index-course:hover, #index-courses .btn-index-course:hover {
+#contact .my-contact .my-form .btn-send:hover, .btn-index-course:hover, #index-courses .btn-index-course:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: #fade4f !important;
   font-weight: bold;
   background-color: #212529;
 }
 
-#index-courses .course-4, #index-courses .course-3, #index-courses .course-2, #index-courses .course-1 {
+#index-courses .course4, #index-courses .course3, #index-courses .course2, #index-courses .course1 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -40,7 +40,7 @@ h1, #course h1, #articles h1, #presentation_text h1, #index-courses .index-title
   color: #212529;
 }
 
-#course h3 {
+#contact .my-contact .my-form label, #course h3 {
   font-family: "Roboto";
   font-size: 1.5rem;
   color: #212529;
@@ -126,6 +126,7 @@ header {
   column-gap: 20px;
   width: 100%;
   margin: 30px 0px 30px 0px;
+  padding: 0px 20px 0px 20px;
 }
 @media only screen and (max-width: 1024px) {
   #index-courses {
@@ -156,58 +157,69 @@ header {
     display: none;
   }
 }
-#index-courses .course-1 {
-  grid-area: course1;
+#index-courses .course1 {
+  grid-area: "course1";
   background-image: url("../img/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
-  #index-courses .course-1 {
-    height: 30vh;
+  #index-courses .course1 {
+    height: 20vh;
+    background-size: cover;
     align-items: center;
     flex-grow: 1;
+    border: 2px solid yellow;
   }
 }
-#index-courses .course-2 {
-  grid-area: course2;
+#index-courses .course2 {
+  grid-area: "course2";
+  background-image: url("../img/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/2.jpg");
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
-  #index-courses .course-2 {
-    height: 30vh;
+  #index-courses .course2 {
+    height: 20vh;
+    background-size: cover;
     align-items: center;
     flex-grow: 1;
+    border: 2px solid yellow;
   }
 }
-#index-courses .course-3 {
-  grid-area: course3;
+#index-courses .course3 {
+  grid-area: "course3";
   background-image: url("../img/3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
-  #index-courses .course-3 {
-    height: 30vh;
+  #index-courses .course3 {
+    height: 20vh;
+    background-size: cover;
     align-items: center;
     flex-grow: 1;
+    border: 2px solid yellow;
   }
 }
-#index-courses .course-4 {
-  grid-area: course4;
+#index-courses .course4 {
+  grid-area: "course4";
   background-image: url("../img/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
-  #index-courses .course-4 {
-    height: 30vh;
+  #index-courses .course4 {
+    height: 20vh;
+    background-size: cover;
     align-items: center;
     flex-grow: 1;
-    margin-bottom: 5px;
+    border: 2px solid yellow;
+    margin-bottom: 10px;
   }
 }
 .container-fluid,
@@ -557,6 +569,58 @@ ul li {
 
 .text-center p {
   text-align: center;
+}
+
+#contact {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  #contact {
+    margin-top: 80px;
+  }
+}
+#contact .my-contact {
+  margin-top: 30px;
+  border: 1px solid #212529;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #fade4f;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 1024px) {
+  #contact .my-contact {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+#contact .my-contact .my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+  height: 100%;
+  width: 100%;
+}
+#contact .my-contact .my-form .btn-send {
+  background-color: #212529;
+  color: #fade4f;
+}
+@media only screen and (max-width: 1024px) {
+  #contact .my-contact .my-form {
+    row-gap: 5px;
+  }
+  #contact .my-contact .my-form label {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+#contact .my-contact iframe {
+  border-radius: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  #contact .my-contact iframe {
+    height: 50%;
+  }
 }
 
 footer {
