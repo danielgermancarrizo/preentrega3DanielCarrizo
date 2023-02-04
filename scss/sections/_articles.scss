@@ -2,6 +2,11 @@ main .container{
     margin-top: 40px;
 }
 
+a{
+    color: map-get($links,color);
+    text-decoration: map-get($links,decoration);   
+}
+
 #articles{
     background-color: $background_color;
 
@@ -49,7 +54,7 @@ main .container{
     
     p{
         @extend %paragraph;
-        padding: 0px;
+        padding: 10px;
         margin: 20px 0px 20px 0px;
         text-align: justify;
     }
@@ -70,14 +75,9 @@ main .container{
 
 }
 
-.card-title a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
 .btn-index-course{
     @extend %btn-course;
+    
 
     @media only screen and (max-width:1024px) {
         font-size: 10px;               
@@ -86,9 +86,12 @@ main .container{
 
 .btn-index-course:hover{
     @extend %btn-course-hover;
+    a{
+        color: antiquewhite !important;
+    }
 
     @media only screen and (max-width:1024px) {
         font-size: 10px;
-        font-weight: bold;               
+        
     }        
 }
