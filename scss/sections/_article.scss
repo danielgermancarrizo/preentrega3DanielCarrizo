@@ -10,17 +10,16 @@ h2{
 }
 
 h3{
-    ///@extend %title-tertiary;
+    @extend %title-tertiary;
+    padding: 20px 50px 20px 50px;
     text-align: justify;
-    padding: 20px 40px 0px 40px;
-    font-family: 'Roboto';
-    font-size: 1.5rem;
-    font-weight: bold;
+    
 }
 
 p{
     @extend %paragraph;
 }
+
 
 @media only screen and (max-width:1024px) {           
     h1{
@@ -29,6 +28,11 @@ p{
          color: $text-color;
          margin-top: 10px;
          margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: $title-tertiary-mob-size;
+        padding: 20px;
     }
 
     p{
